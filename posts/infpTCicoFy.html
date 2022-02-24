@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>infpTCicoFy &mdash; G+ LoME Archive</title>
+    <meta name="keywords" content="LoME, Languages of Middle Earth, elvish, sindarin, quenya, Tolkien, Tamas Ferencz">
+    <meta name="description" content="Archive of Tamas Ferencz's Google Plus community Languages of Middle Earth (LoME)">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/lome-archive/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/lome-archive/assets/img/logo.ico" type="image/x-icon">
+
+    <!-- Simple-Jekyll-Search 1.17.12 -->
+    <script src="/lome-archive/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    <!-- Smart Quotes -->
+    <script src="/lome-archive/assets/js/vendor/smartquotes.js"></script>
+</head>
+
+  <body>
+    <header class="site-header">
+
+	<a class="site-title" href="/lome-archive/">
+		G+ LoME Archive
+    </a>
+    
+    <nav class="big-nav">
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                
+                [<a href="/lome-archive/all.html">All</a>]
+            
+        
+            
+                
+                
+                [<a href="/lome-archive/tags.html">Tags</a>]
+            
+        
+            
+                
+                
+                [<a href="/lome-archive/search.html">Search</a>]
+            
+        
+	</nav>
+    <nav class="small-nav">
+        [ <a href="/lome-archive/menue.html">Menue</a> ]
+    </nav>
+</header>
+<hr>
+
+      <div class="title-block">
+    <div class="title">
+        Post <span class="post-id">infpTCicoFy</span>
+    </div>
+    <div class="tag-block">
+        <div class="previous">
+            
+                <a href="https://j-teuber.github.io/lome-archive/posts/iAd19NGaFLT">← previous</a>
+            
+        </div>
+        <div class="tags">
+            
+                <a class="tag" href="/lome-archive/tags.html#severin-zahler">Severin Zahler</a>,
+            
+                <a class="tag" href="/lome-archive/tags.html#paul-strack">Paul Strack</a>,
+            
+                <a class="tag" href="/lome-archive/tags.html#discussion">Discussion</a>
+            
+        </div>
+        <div class="next">
+            
+                <a href="https://j-teuber.github.io/lome-archive/posts/i3i2U2V1zQn">next →</a>
+            
+        </div>
+    </div>
+</div>
+<div class="content-all">
+            <div class="original-post">
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#severin-zahler">Severin Zahler</a>
+        <span class="time">Jan 10, 2017 (10:37)</span>
+        </h3>
+        <div class="content">So, after the christmas break I am back working on my conlang database project. Currently I am developping a java program which dissects the data from eldamo and sorts and arranges it into the tables, and ultimatively will directly load it into the database. As an intermediate developping / debugging step I am writing the tables to csv files for easy verification of the code.<br><br>+<a class="mention" href="/lome-archive/tags.html#paul-strack">Paul Strack</a> As I am doing this I am stumbling across some of the (so far) very few errors of the eldamo file. I just extracted the "speech" attribute of all word pages (in order to create a word type table), and there's a few things I found odd / noteworthy:<br><br>- There's a few combined types which appear in two different orders, I presume these are not intentionally different from each other:<br>-- "n adv" vs. "adv n"<br>-- "n adj" vs. "adj n"<br>-- "conj adv" vs. "adv conj"<br>-- "adv prep" vs "prep adv"<br>-- "adv interj" vs. "interj adv"<br>- Once "card" appears, in all other occurrences you did put "cardinal": <a class="ext-link" href="http://eldamo.org/content/words/word-4008647877.html">http://eldamo.org/content/words/word-4008647877.html</a><br>- Similar for "suf" vs. "suffix", here the latter one appears once only: <a class="ext-link" href="http://eldamo.org/content/words/word-3792660851.html">http://eldamo.org/content/words/word-3792660851.html</a><br>- Similar for "pref" vs. "prefix", prefix is used 4 times in total.<br>- There's one occurrence of "v" instead of "vb": <a class="ext-link" href="http://eldamo.org/content/words/word-529403071.html">http://eldamo.org/content/words/word-529403071.html</a><br>- For G. siriol "flowing" some major mix up of the fields has happened; "sindi" appears as word and "siriol" as word type: <a class="ext-link" href="http://eldamo.org/content/words/word-2199144701.html">http://eldamo.org/content/words/word-2199144701.html</a><br>- There's two words who are missing the speech attribute, even though the xsd file states there always should be one: <br>-- <a class="ext-link" href="http://eldamo.org/content/words/word-4199786153.html">http://eldamo.org/content/words/word-4199786153.html</a><br>-- <a class="ext-link" href="http://eldamo.org/content/words/word-2768164367.html">http://eldamo.org/content/words/word-2768164367.html</a><br><br>I hope this helps to fix some things :) For your convenience, here's the entire output I got from my program: <a class="ext-link" href="http://pastebin.com/5kSJpf6j">http://pastebin.com/5kSJpf6j</a><br><br>I will also try to add a few additional checks to my code which may help to find a few more of these minor flaws :)</div>
+        </div>
+        
+        <!-- more -->
+        
+        <div class="card">
+        <a class="card-title" href="http://eldamo.org/content/words/word-4008647877.html">Eldamo : Early Quenya : atwen</a>
+        <div class="card-content">ᴱQ. atwen card. “20”. Reference ✧ QL/033.2401 ✧ “20”. Derivations. < ᴱ√ATA¹ “dual” ✧ QL/033.2201.</div>
+        </div>
+        
+        </div>
+        <div class="comments">
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#severin-zahler">Severin Zahler</a>
+        <span class="time">Jan 11, 2017 (14:09)</span>
+        </h3>
+        <div class="content">+<a class="mention" href="/lome-archive/tags.html#paul-strack">Paul Strack</a> there's multiple language codes used in the <ref> tags which are not defined in a <language> tag.<br><br>These are:<br>- "bel"<br>- "dor"<br>- "fal"<br>- "edan"<br>- "sol"<br>- "ln"<br>- "eon"<br>- "lon"<br>- "oss"<br><br>(All language tags used in the <word> tags exist though)</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#severin-zahler">Severin Zahler</a>
+        <span class="time">Jan 11, 2017 (16:25)</span>
+        </h3>
+        <div class="content">Next up there's a few sources with prefixes that are not mentioned in a <source> tag:<br><br>- LT/192.3006, duplicate to another reference which only differs with having a valid source (LT1/192.3006)<br>- LT/132.0212, this one has no valid duplicate refernce though.<br>- VT32/07.1106: Unique case, don't have VT on me to check whether the source is erronous or whether VT32 is just missing in the sources list.<br>- PEE/17.35, unique case</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#paul-strack">Paul Strack</a>
+        <span class="time">Jan 12, 2017 (02:06)</span>
+        </h3>
+        <div class="content">+<a class="mention" href="/lome-archive/tags.html#severin-zahler">Severin Zahler</a> Thanks for the feedback. I haven't work on Eldamo for ... an embarrassingly long time. I've been obsessed with other projects in 2016, but hope to get back to working on Eldamo soon.<br><br>I haven't done validations on the parts of speech for a while, so the XSD specifications and the XML data may be out of sync. I will clean it when I have time. I added a github issue so I won't forget:<br><br><a class="ext-link" href="https://github.com/pfstrack/eldamo/issues/7">github.com - Fix various data validation issues · Issue #7 · pfstrack/eldamo</a><br><br>Regarding the ref language codes that do not appear in the languages list, those are references that are marked as one language that I put under words classified as a different language. There are various reasons why I did this.<br><br>"dor" and "fal" are dialects of Ilkorin (ilk), namely Doriathrin and Falathrim. "bel" is a late variation on Ilkorin that Tolkien labeled Beleriandric. "oss" and "edan" are variants of Danian (dan), namely Ossriandric and East Danian.<br><br>"sol" is Solosimpi which I lumped in with Early Telerin (et). "eon" is Early Old Noldorin which I lumped in with Early Noldorin though I may separate it in the future when I get around to analyzing it. "ln" is Late Noldorin, for words labeled "Noldorin" by Tolkien in the transitional period between Noldorin and Sindarin.</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#severin-zahler">Severin Zahler</a>
+        <span class="time">Jan 12, 2017 (08:06)</span>
+        </h3>
+        <div class="content">Thanks for the reply! Will add those codes and the language names to my conlang table then; will think about an easy way to make these relations between the languages easily queryable.<br>The code "lon", is that "Late Old Noldorin"? </div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#paul-strack">Paul Strack</a>
+        <span class="time">Jan 12, 2017 (15:43)</span>
+        </h3>
+        <div class="content">Yes, "lon" is Late Old Noldorin</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#severin-zahler">Severin Zahler</a>
+        <span class="time">Jan 13, 2017 (17:16)</span>
+        </h3>
+        <div class="content">+<a class="mention" href="/lome-archive/tags.html#paul-strack">Paul Strack</a> I have compiled a list of all reference sources which have 5 or more digits in their line + word position part of the source. Are all of that, only some of that, or none of these erronous? If they are correct, what do the digits represent if there are five of them?<br><br><a class="ext-link" href="http://pastebin.com/AtcBZ57n">pastebin.com - SD/421.30061  SD/421.30063  SD/422.08101  SD/421.30065  SD/422.08071  SD/422.080 - Pastebin.com</a><br><br>Asking as I am storing all bits of information, i.e. page, line number and word position, in a separated form.<br><br>Also theres various sources with the format of i.e. PE13/155.9901-1, what does the "-1" mean?</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#paul-strack">Paul Strack</a>
+        <span class="time">Jan 14, 2017 (02:54)</span>
+        </h3>
+        <div class="content">The information after the page number is not entirely consistent. Mostly it means line number and word position, but I break that rule often. For example, Tolkien may designate a specific word as belonging to several languages, and I need multiple references from one word. Sometimes I split the elements of compound word into their own references. Sometimes I just add an extra digit and sometimes I use the -1 format. Over the years I've changed my mind several times. <br><br>Beyond the page number, I think the most I can guarantee is that the identifier should be unique. </div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#severin-zahler">Severin Zahler</a>
+        <span class="time">Jan 14, 2017 (11:07)</span>
+        </h3>
+        <div class="content">Ah now as you say it, and I sort the list, it actually is fairly obvious! <br>As I'd read it now the four first digits are line number + word position as usual and the last digit the variant, often just "5", or "1", and eventually higher digits if more variants exist.<br><br>A few single ones that still puzzle me though:<br>PE13/147.30310: This is the only one with digit "0" at the end.<br>QL/060.70ive: has letters instead of digits.<br>TI/310.0034091: has a lot of digits.<br>PE19/093.20 13: has a space in between.<br><br>But forgive me for labelling so many things of the data as probably erronous, I absolutely don't want to put you to shame, not at all! I just want to make sure I don't misinterprete this valuable data, and also want to probably help you with discovering the very few inconsistencies over this massive amount of data. Actually for that you seemingly arranged all of this manually it is incredibly consistent!</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#paul-strack">Paul Strack</a>
+        <span class="time">Jan 14, 2017 (17:43)</span>
+        </h3>
+        <div class="content">No need to apologize. I find it very interesting when people use data in unexpected ways, and this can reveal flaws in the raw data. The four examples were all typos, so I've fixed in the source data and the fix will be in the next release.</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#severin-zahler">Severin Zahler</a>
+        <span class="time">Jan 16, 2017 (11:29)</span>
+        </h3>
+        <div class="content">+<a class="mention" href="/lome-archive/tags.html#paul-strack">Paul Strack</a> Thanks a lot for the update! Especially that you settled on uniform namings of the speech attribute makes a programmatic analysis quite a bit easier :)<br><br>Now that I've extended the code to specially look for the length of the line number + word position bit I stumbled over a handful of sources which only have 3 digits. As there are only very few of those I assume these are not intentional:<br><br>- RGEO/63.030 ("A Elbereth Gilthoniel")<br>- LotR/0429.001 ("Methedras")<br>- LR/317.002 ("iChúrinien")<br>- S/154.001 ("Grond")<br><br>Also I think you've overlooked my remark on a few source reference prefixes ("books", to avoid confusion) which are not listed; I'm not familiar with all abbreviations, so I can't wholly judge which are just missing from the sources list and which may be typos, here they are again (all appear uniquely):<br><br>- VT32/07.1106<br>- LT/192.3006<br>- LT/132.0212<br>- PEE/17.35</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#paul-strack">Paul Strack</a>
+        <span class="time">Jan 16, 2017 (18:17)</span>
+        </h3>
+        <div class="content">VT32 and PEE are both missing from the sources, so I've added them. The rest of the above are typos.<br><br>It takes a long time for a new full build of Eldamo, but I'm finding this process very fruitful, so I've checked a temporary data file with the modifications into Github here:<br><br><a class="ext-link" href="https://github.com/pfstrack/eldamo/blob/master/src/main/webapp/general/eldamo-data-tmp.xml">github.com - eldamo</a><br><br>[EDIT] When I clicked on the download button in my browser, it tried to load the xml file into my browser window, so you may want to right-click on the button and choose "Save As..."</div>
+        </div>
+        
+        </div>
+        
+</div>
+
+    
+<script>smartquotes();</script>
+
+  </body>
+</html>

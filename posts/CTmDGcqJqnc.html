@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CTmDGcqJqnc &mdash; G+ LoME Archive</title>
+    <meta name="keywords" content="LoME, Languages of Middle Earth, elvish, sindarin, quenya, Tolkien, Tamas Ferencz">
+    <meta name="description" content="Archive of Tamas Ferencz's Google Plus community Languages of Middle Earth (LoME)">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/lome-archive/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/lome-archive/assets/img/logo.ico" type="image/x-icon">
+
+    <!-- Simple-Jekyll-Search 1.17.12 -->
+    <script src="/lome-archive/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    <!-- Smart Quotes -->
+    <script src="/lome-archive/assets/js/vendor/smartquotes.js"></script>
+</head>
+
+  <body>
+    <header class="site-header">
+
+	<a class="site-title" href="/lome-archive/">
+		G+ LoME Archive
+    </a>
+    
+    <nav class="big-nav">
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                
+                [<a href="/lome-archive/all.html">All</a>]
+            
+        
+            
+                
+                
+                [<a href="/lome-archive/tags.html">Tags</a>]
+            
+        
+            
+                
+                
+                [<a href="/lome-archive/search.html">Search</a>]
+            
+        
+	</nav>
+    <nav class="small-nav">
+        [ <a href="/lome-archive/menue.html">Menue</a> ]
+    </nav>
+</header>
+<hr>
+
+      <div class="title-block">
+    <div class="title">
+        Post <span class="post-id">CTmDGcqJqnc</span>
+    </div>
+    <div class="tag-block">
+        <div class="previous">
+            
+                <a href="https://j-teuber.github.io/lome-archive/posts/gSVbXRT2ut8">← previous</a>
+            
+        </div>
+        <div class="tags">
+            
+                <a class="tag" href="/lome-archive/tags.html#paul-strack">Paul Strack</a>,
+            
+                <a class="tag" href="/lome-archive/tags.html#damien-bador">Damien Bador</a>,
+            
+                <a class="tag" href="/lome-archive/tags.html#lokyt-l">Lokyt L.</a>,
+            
+                <a class="tag" href="/lome-archive/tags.html#links-to-resources">Links to resources</a>
+            
+        </div>
+        <div class="next">
+            
+                <a href="https://j-teuber.github.io/lome-archive/posts/Po9d8EmQpFv">next →</a>
+            
+        </div>
+    </div>
+</div>
+<div class="content-all">
+            <div class="original-post">
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#paul-strack">Paul Strack</a>
+        <span class="time">Jul 07, 2018 (19:36)</span>
+        </h3>
+        <div class="content">This is the last general post on Eldamo 0.6.6. It is more technical in nature, and it therefore primarily of interest for those who work with the raw Eldamo data for sites like <a class="ext-link" href="http://elfdict.com">elfdict.com</a><br><br>There seems to be an increasing interest in collaborating with me on Eldamo data, which means I've needed to fix a major flaw in how Eldamo identifies its entries. Previously, Eldamo identified word entries only through the language and word itself in the raw XML data:<br><br><word l="q" v="má" ...<br><br>Eldamo also has a "page-id", but originally that ID was always derived from the word and was not fixed in value. For example, not long ago I changed ᴹQ. <i>má</i> “hand” to ᴹQ. <i>má¹</i> “hand” because a distinct word was publish in PE21: ᴹQ. <i>má²</i> “land, region”. This meant that the page-id for ᴹQ. <i>má</i> “hand” changed at that time (about a year ago).<br><br>This is no longer true. I've modified the Eldamo logic so that page-id is immutable, and won't change if the word value changes. This should make collaboration easier, because you can link to Eldamo data using the fixed and immutable page-id instead of the word value itself (which might change for typo corrections or because new and similar words are published).<br><br>This is how the internationalized data I mentioned in my previous post works: it uses the immutable page-id to link the non-English translations to the associated entry in Eldamo. This way, as I edit Eldamo, the non-English translations will remained linked even if the word changes in small ways.<br><br>This is not to say a page-id will <strong>always</strong> exist. Sometimes I discover entries in Eldamo that I now think are bogus, and delete them, and their associated page-id also disappears. But if I modify rather than delete an entry, the page-id will stay fixed.</div>
+        </div>
+        
+        <!-- more -->
+        
+        <div class="card">
+        <a class="card-title" href="http://elfdict.com">Welcome! - Parf Edhellen: an elvish dictionary</a>
+        <div class="card-content">Parf Edhellen is one of the most comprehensive elvish dictionaries on the Internet, with thousands of names, words and phrases in beautiful elvish.</div>
+        </div>
+        
+        </div>
+        <div class="comments">
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#lokyt-l">Lokyt L.</a>
+        <span class="time">Jul 11, 2018 (11:54)</span>
+        </h3>
+        <div class="content">+<a class="mention" href="/lome-archive/tags.html#paul-strack">Paul Strack</a> May I take the liberty of using this post to draw your attention to another possible slip in Eldamo?<br><br>You list G. <i>gwalir</i> "a rime" (<a class="ext-link" href="https://eldamo.org/content/words/word-2014687261.html">https://eldamo.org/content/words/word-2014687261.html</a>) together with its synonym <i>gwaidhi</i> as a derivation of <i>ᴱ√GʷIÐ</i>.<br>However, <i>gwalir</i> is IMHO clearly a combination of the collective prefix <i>*ŋwa-</i> (<a class="ext-link" href="https://eldamo.org/content/words/word-3499830491.html">https://eldamo.org/content/words/word-3499830491.html</a>) and <i>ᴱ√LIÐ</i> (<a class="ext-link" href="https://eldamo.org/content/words/word-2340811897.html">https://eldamo.org/content/words/word-2340811897.html</a>), quite the same as <i>golairin</i> (<a class="ext-link" href="https://eldamo.org/content/words/word-292998387.html">https://eldamo.org/content/words/word-292998387.html</a>). You even got it right with your ᴺS. adaptation (<a class="ext-link" href="https://eldamo.org/content/words/word-3116099065.html">https://eldamo.org/content/words/word-3116099065.html</a>) :-)<br>So <i>gwalir</i> doesn't belong with <i>gwaidhi</i> (and <i>ᴱ√GʷIÐ</i>) at all.</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#paul-strack">Paul Strack</a>
+        <span class="time">Jul 11, 2018 (15:55)</span>
+        </h3>
+        <div class="content">+<a class="mention" href="/lome-archive/tags.html#lokyt-l">Lokyt L.</a> You are quite right. I have these arranged wrong. I agree that <i>gwalir</i> is a variant of <i>golairin</i>, not <i>gwaidhi</i>. I will rearrange the entries. </div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#lokyt-l">Lokyt L.</a>
+        <span class="time">Jul 16, 2018 (10:44)</span>
+        </h3>
+        <div class="content">+<a class="mention" href="/lome-archive/tags.html#paul-strack">Paul Strack</a> I'm afraid I can't leave you alone yet :)<br><br>I've noticed that some word variants, probably all from the set of those deleted by Tolkien at some time, still don't show in the Search. I found this out with some G. adverbs & adjectives, namely <i>bodron</i> (<a class="ext-link" href="https://eldamo.org/content/words/word-3189058085.html">https://eldamo.org/content/words/word-3189058085.html</a>, where it is furthermore wrongly placed with an adjective despite being explicitely marked as "av." in GL), <i>egron</i> (<a class="ext-link" href="https://eldamo.org/content/words/word-3595745785.html">https://eldamo.org/content/words/word-3595745785.html</a>) and <i>fidron</i> (<a class="ext-link" href="https://eldamo.org/content/words/word-255498755.html">https://eldamo.org/content/words/word-255498755.html</a>), but it might very well be more widespread.<br>Is this intentional?<br><a class="ext-link" href="https://eldamo.org/content/words/word-3189058085.html">eldamo.org - Eldamo : Gnomish : bodra</a></div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#paul-strack">Paul Strack</a>
+        <span class="time">Jul 17, 2018 (06:36)</span>
+        </h3>
+        <div class="content">+<a class="mention" href="/lome-archive/tags.html#lokyt-l">Lokyt L.</a> You are correct that this is intentional: deleted variants often don’t always show up in searches. I have to make some compromises between “completeness” and “effeciency” and deleted forms often don’t make the cut.</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#lokyt-l">Lokyt L.</a>
+        <span class="time">Jul 17, 2018 (07:42)</span>
+        </h3>
+        <div class="content">+<a class="mention" href="/lome-archive/tags.html#paul-strack">Paul Strack</a> I see. Thank you for the answer.<br>It makes some research procedures harder (as one cannot get a reliably complete list e.g. of all occurances of one particular suffix - which is what I was trying to do), but I gather things like this aren't the primary purpose of Eldamo anyway.<br>(However, in the particular case of GL, I'd say most of the deleted variants actually deserve a place amongst the indexed ones more than their later replacements. The former mostly belong to the main, most coherent and most systematically composed layer of the text, whereas the later changes were AFAIK only occasional and rather erratic - cf. PE 11/2-3.)<br>Anyway, I'd still like to point out <i>bodron</i>'s not being an adjective.</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#paul-strack">Paul Strack</a>
+        <span class="time">Jul 17, 2018 (15:21)</span>
+        </h3>
+        <div class="content">+<a class="mention" href="/lome-archive/tags.html#lokyt-l">Lokyt L.</a> I don’t disagree with you. The Gnomish material could definitely use some cleanup and reorganization. I still intend to someday make a second pass through it to finish my phonetic analysis and describe each entry in more detail. It just a matter of finding the time, which isn’t easy. There are a lot of competing priorities. </div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#lokyt-l">Lokyt L.</a>
+        <span class="time">Jul 17, 2018 (16:30)</span>
+        </h3>
+        <div class="content">+<a class="mention" href="/lome-archive/tags.html#paul-strack">Paul Strack</a> Yeah, I know how that feels :)</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#damien-bador">Damien Bador</a>
+        <span class="time">Jul 20, 2018 (06:45)</span>
+        </h3>
+        <div class="content">+<a class="mention" href="/lome-archive/tags.html#paul-strack">Paul Strack</a> This for me is an issue. I believe the best solution would be to have a specific tag for deleted words, which would allow people to look up these words (or not). One could even see a value in searching only deleted words to investigate whether some recurring patterns appear.</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#damien-bador">Damien Bador</a>
+        <span class="time">Jul 20, 2018 (06:49)</span>
+        </h3>
+        <div class="content">+<a class="mention" href="/lome-archive/tags.html#paul-strack">Paul Strack</a> Meanwhile, I find your latest update destabilizing: some authentic words such as Tel. <i>jagula</i> no longer show up, while only its "regularized" version <i>*yagula</i> appears.<br><br>This feels like the wrong way to proceed, which will end up into a Neo-Elvish dictionary, and not a true dictionary of Tolkien's Elvish.<br><br>However, in this case again, a solution could be to have a tag for regularized orthographies, leaving readers to decide whether they want to search all forms, regularized forms only, or authentic forms only. The same could work for neologisms, by the way.</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#paul-strack">Paul Strack</a>
+        <span class="time">Jul 20, 2018 (07:21)</span>
+        </h3>
+        <div class="content">+<a class="mention" href="/lome-archive/tags.html#damien-bador">Damien Bador</a> these are good suggestions, but there are technical limitations on how advanced I can make the search engine given some of the early design decisions I’ve made. In particular, since I want the search to work offline in a browser without a backing database, there are limitations on how much information I can load in memory before things start running too slowly. I’m basically close to those limits now.<br><br>But those are really limitations of the search engine, not the data model itself. In theory you could parse the Eldamo data model into some other kind of engine and build the kind of searches you want. All the information is there in the raw XML model, including all the deleted forms and original spellings.<br><br>Most people don’t have the technical expertise to work with the raw XML, but one of things I’ve been considering is producing spreadsheet exports of Eldamo data for research purposes, since that pretty accessible for most people. I just don’t have clear requirements right now for it.</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#damien-bador">Damien Bador</a>
+        <span class="time">Jul 20, 2018 (09:41)</span>
+        </h3>
+        <div class="content">+<a class="mention" href="/lome-archive/tags.html#paul-strack">Paul Strack</a> Thanks for your answer. Indeed, if an alternate search engine could be built, this could alleviate my concerns. I'd have to take some time looking up with competent friends whether this would be difficult to implement.</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#damien-bador">Damien Bador</a>
+        <span class="time">Jul 20, 2018 (10:36)</span>
+        </h3>
+        <div class="content">+<a class="mention" href="/lome-archive/tags.html#paul-strack">Paul Strack</a> As a matter of fact, I've hit a new "ERROR:MULTIGLOSS" in entry for <i>(h)róna</i>. It's likely the new update as created some similar issues here and there.</div>
+        </div>
+        
+        </div>
+        
+</div>
+
+    
+<script>smartquotes();</script>
+
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>6DKT3ZoNeah &mdash; G+ LoME Archive</title>
+    <meta name="keywords" content="LoME, Languages of Middle Earth, elvish, sindarin, quenya, Tolkien, Tamas Ferencz">
+    <meta name="description" content="Archive of Tamas Ferencz's Google Plus community Languages of Middle Earth (LoME)">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/lome-archive/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/lome-archive/assets/img/logo.ico" type="image/x-icon">
+
+    <!-- Simple-Jekyll-Search 1.17.12 -->
+    <script src="/lome-archive/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    <!-- Smart Quotes -->
+    <script src="/lome-archive/assets/js/vendor/smartquotes.js"></script>
+</head>
+
+  <body>
+    <header class="site-header">
+
+	<a class="site-title" href="/lome-archive/">
+		G+ LoME Archive
+    </a>
+    
+    <nav class="big-nav">
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                
+                [<a href="/lome-archive/all.html">All</a>]
+            
+        
+            
+                
+                
+                [<a href="/lome-archive/tags.html">Tags</a>]
+            
+        
+            
+                
+                
+                [<a href="/lome-archive/search.html">Search</a>]
+            
+        
+	</nav>
+    <nav class="small-nav">
+        [ <a href="/lome-archive/menue.html">Menue</a> ]
+    </nav>
+</header>
+<hr>
+
+      <div class="title-block">
+    <div class="title">
+        Post <span class="post-id">6DKT3ZoNeah</span>
+    </div>
+    <div class="tag-block">
+        <div class="previous">
+            
+                <a href="https://j-teuber.github.io/lome-archive/posts/Q3ezKDK4FZi">← previous</a>
+            
+        </div>
+        <div class="tags">
+            
+                <a class="tag" href="/lome-archive/tags.html#severin-zahler">Severin Zahler</a>,
+            
+                <a class="tag" href="/lome-archive/tags.html#wesley-stump">Wesley Stump</a>,
+            
+                <a class="tag" href="/lome-archive/tags.html#leonard-w">Leonard W.</a>,
+            
+                <a class="tag" href="/lome-archive/tags.html#discussion">Discussion</a>
+            
+        </div>
+        <div class="next">
+            
+                <a href="https://j-teuber.github.io/lome-archive/posts/D8THNhsWv4A">next →</a>
+            
+        </div>
+    </div>
+</div>
+<div class="content-all">
+            <div class="original-post">
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#wesley-stump">Wesley Stump</a>
+        <span class="time">Nov 30, 2017 (23:07)</span>
+        </h3>
+        <div class="content">To all of the web design Eldar out there:<br>I have been making a Tengwar converter webpage that takes the latin script and changes the writing into the Tengwar Annatar font. I have come accross a dilemna: The only special character that doesn't seem to be read is the question mark! Here's the line of code:<br>                        if(lett == '\x3F'){<br>				output += '\xc0';<br>			}<br>'\x3F' is the hexadecimal code for the question mark, but when I try to run the code, it doesn't add the Á character to the variable "output". (second line) I tried replacing the "?" hex code with other strange characters, and the code works!!! If you know why this is happening, please reply!</div>
+        </div>
+        
+        <!-- more -->
+        
+        </div>
+        <div class="comments">
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#leonard-w">Leonard W.</a>
+        <span class="time">Nov 30, 2017 (23:47)</span>
+        </h3>
+        <div class="content">Have you tried to debug your code? Single stepping should be sufficient. </div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#wesley-stump">Wesley Stump</a>
+        <span class="time">Dec 01, 2017 (03:36)</span>
+        </h3>
+        <div class="content">The code works if I insert anything into the '\x3F', and the code works everywhere else. I don't use any other functions that deal with this hex code.</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#wesley-stump">Wesley Stump</a>
+        <span class="time">Dec 01, 2017 (04:01)</span>
+        </h3>
+        <div class="content">But I think you're right. There must be a small coincidence that creates an error when one puts in the "?"</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#severin-zahler">Severin Zahler</a>
+        <span class="time">Dec 05, 2017 (01:43)</span>
+        </h3>
+        <div class="content">What programming language are you using? In all languages I was using I would not have to specially encode characters, usually '?' does the trick.<br><br>Edit: in '\xc0' you used a small letter c, maybe try a small letter in '\x3f'</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#wesley-stump">Wesley Stump</a>
+        <span class="time">Dec 05, 2017 (13:33)</span>
+        </h3>
+        <div class="content">Im using javascript. And x3f is needed because that is the hex code for a "?"</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#wesley-stump">Wesley Stump</a>
+        <span class="time">Dec 05, 2017 (13:34)</span>
+        </h3>
+        <div class="content">Ok</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#severin-zahler">Severin Zahler</a>
+        <span class="time">Dec 06, 2017 (00:02)</span>
+        </h3>
+        <div class="content">Alright, so I am having a website I am currently building and I quickly abused it to make some tests on this matter.<br><br>Check this out: <a class="ext-link" href="http://elbisch.ch.diamant.ch-meta.net/jstest">elbisch.ch.diamant.ch-meta.net - - Startseite</a><br><br>The code behind is:<br><a class="ext-link" href="https://i.imgur.com/GHhWNMc.png">https://i.imgur.com/GHhWNMc.png</a><br><br>As you can see, all sorts of comparisons equal true. You don't need to encode the characters into hex, maybe if your file is not supporting UTF-8 you may need to do it for the non-ASCII characters, but it does not seem to be necessary. One thing I found is to preferrably use === over == to avoid some unwanted behaviour.</div>
+        </div>
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#wesley-stump">Wesley Stump</a>
+        <span class="time">Dec 06, 2017 (01:36)</span>
+        </h3>
+        <div class="content">Thank you! I will try that out!!!</div>
+        </div>
+        
+        </div>
+        
+</div>
+
+    
+<script>smartquotes();</script>
+
+  </body>
+</html>

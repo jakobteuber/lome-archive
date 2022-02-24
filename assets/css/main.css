@@ -1,0 +1,103 @@
+@font-face { font-family: 'Gentium Plus'; src: url("fonts/GentiumPlus-R.ttf"); }
+
+@font-face { font-family: 'Gentium Plus'; src: url("fonts/GentiumPlus-I.ttf"); font-style: italic; }
+
+html { background: #fdfdfd; }
+
+body { margin: 0; padding: 0; color: #262626; font-family: "Gentium Plus", serif; font-size: 1.25em; word-wrap: break-word; }
+
+h1, h2, h3, h4, h5, h6, .title { font-family: "Gentium Plus", serif; line-height: 1.3; margin: 0.6em 0 0 0; font-size: 1.3em; font-weight: bold; font-style: italic; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .title a { color: #262626; }
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .title a:hover { text-decoration: underline; }
+
+@media screen and (min-width: 600px) { .title { font-size: 2em; } h3 { font-size: 1.5em; } }
+
+.content-all { padding: 1em; max-width: 65ex; margin: auto; }
+
+.title-block { padding: 1em; max-width: 100ex; margin: auto; }
+
+.title-block .title { text-align: center; }
+
+a { text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+.ext-link, .card-title { color: red; }
+
+.ext-link:visited, .card-title:visited { color: darkred; }
+
+#post-nav { width: 100%; display: inline-block; }
+
+#post-nav #previous-post { float: left; width: 50%; }
+
+#post-nav #next-post { float: right; text-align: right; width: 50%; }
+
+.site-title { font-weight: bold; }
+
+.big-nav, .small-nav { float: right; }
+
+.site-header { margin: 0.5em 1em 0.5em 1em; }
+
+.big-nav { display: none; }
+
+@media screen and (min-width: 600px) { .big-nav { display: inline; } .small-nav { display: none; } }
+
+.full-page-nav { margin: auto; text-align: center; }
+
+.tag-block { font-style: italic; color: #525252; }
+
+.tag-block a { font-style: italic; color: #525252; text-decoration: none; }
+
+.tag-block a:hover { text-decoration: underline; }
+
+.tag-block .previous, .tag-block .next { text-align: center; margin: 1em; }
+
+.tag-block .tags { text-align: center; margin: 1em; }
+
+@media screen and (min-width: 600px) { .tag-block { display: flex; } .tag-block .previous, .tag-block .next { flex-basis: 20%; } .tag-block .tags { flex-basis: 60%; } }
+
+.author { color: #525252; font-size: 1em; }
+
+.author .author-name { color: #262626; font-size: 1.5em; }
+
+.author::before { content: '@'; font-size: 1.5em; color: #525252; }
+
+.post-id::before { content: '#'; color: #525252; }
+
+.card { margin-top: 2em; margin-bottom: 2em; border-style: solid; padding: 1em; }
+
+.card .card-title { font-weight: bold; border-width: thin; }
+
+.search-bar { display: block; width: 100%; height: 2em; padding: 6px 12px; margin-bottom: 1em; font-size: 100%; line-height: 1.43; color: #262626; background: #fdfdfd none; border: 1px solid #ccc; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s; -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+
+.search-bar:focus, .search-bar:hover { border-color: #a00000; outline: 0; }
+
+.search-bar input[type=text] { height: 46px; padding: 10px 16px; font-size: 18px; line-height: 1.33; border-radius: 6px; }
+
+#search-button { display: block; width: 50%; margin: auto; text-align: center; cursor: pointer; font-size: 100%; }
+
+ul.plain { list-style-type: none; margin: 0; padding: 0; }
+
+ul.plain li { margin-top: 1em; }
+
+.post-link { font-weight: bold; font-style: italic; font-size: 1.2em; color: #262626; }
+
+.post-link:hover { text-decoration: underline; }
+
+.post-link::before { content: '#'; color: #525252; }
+
+.intro { font-size: medium; }
+
+.tag-preview { font-style: italic; color: #525252; text-decoration: none; }
+
+.tag-preview a { font-style: italic; color: #525252; text-decoration: none; }
+
+.tag-preview a:hover { text-decoration: underline; }
+
+h3.with-line { display: flex; width: 100%; align-items: center; }
+
+h3.with-line:after { content: ''; border-top: 1px solid lightgray; margin: 0 0 0 20px; flex: 1 0 20px; }
+
+/*# sourceMappingURL=main.css.map */

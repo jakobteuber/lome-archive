@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Search &mdash; G+ LoME Archive</title>
+    <meta name="keywords" content="LoME, Languages of Middle Earth, elvish, sindarin, quenya, Tolkien, Tamas Ferencz">
+    <meta name="description" content="Archive of Tamas Ferencz's Google Plus community Languages of Middle Earth (LoME)">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/lome-archive/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/lome-archive/assets/img/logo.ico" type="image/x-icon">
+
+    <!-- Simple-Jekyll-Search 1.17.12 -->
+    <script src="/lome-archive/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    <!-- Smart Quotes -->
+    <script src="/lome-archive/assets/js/vendor/smartquotes.js"></script>
+</head>
+
+  <body>
+    <header class="site-header">
+
+	<a class="site-title" href="/lome-archive/">
+		G+ LoME Archive
+    </a>
+    
+    <nav class="big-nav">
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                
+                [<a href="/lome-archive/all.html">All</a>]
+            
+        
+            
+                
+                
+                [<a href="/lome-archive/tags.html">Tags</a>]
+            
+        
+            
+                
+                
+                [<a href="/lome-archive/search.html">Search</a>]
+            
+        
+	</nav>
+    <nav class="small-nav">
+        [ <a href="/lome-archive/menue.html">Menue</a> ]
+    </nav>
+</header>
+<hr>
+
+      <div class="title-block">
+    <div class="title">
+        Search
+    </div>
+</div>
+<div class="content-all">
+    <script>
+    function advancedSearch() {
+        var text = document.getElementById("search-input").value;
+        var safe = encodeURIComponent(text + " site:https://j-teuber.github.io/lome-archive/posts/");
+        window.open("https://duckduckgo.com?q=" + safe);
+    }
+</script>
+
+<div class="search">
+    <input type="text" id="search-input" placeholder="Enter keywords..." class="search-bar" autofocus>
+    <button onclick="advancedSearch();" id="search-button">Advanced Search</button>
+</div>
+
+<ul id="results-container" class="plain"></ul>
+
+    <script type="text/javascript">
+        SimpleJekyllSearch({
+            searchInput: document.getElementById('search-input'),
+            resultsContainer: document.getElementById('results-container'),
+            json: '/lome-archive/assets/data/search.json',
+            searchResultTemplate: '<li><div class="preview-title"><a class="post-link" href="{url}" class="result-title">{title}:</a> {author} <span class="tag-preview">({tags})</span></div> <div class="intro">{intro}</div></li>',
+            noResultsText: 'No result found',
+            limit: 100,
+            fuzzy: false,
+            exclude: []
+        })
+    </script>
+
+</div>
+
+    
+<script>smartquotes();</script>
+
+  </body>
+</html>

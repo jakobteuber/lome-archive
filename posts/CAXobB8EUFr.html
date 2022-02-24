@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CAXobB8EUFr &mdash; G+ LoME Archive</title>
+    <meta name="keywords" content="LoME, Languages of Middle Earth, elvish, sindarin, quenya, Tolkien, Tamas Ferencz">
+    <meta name="description" content="Archive of Tamas Ferencz's Google Plus community Languages of Middle Earth (LoME)">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/lome-archive/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/lome-archive/assets/img/logo.ico" type="image/x-icon">
+
+    <!-- Simple-Jekyll-Search 1.17.12 -->
+    <script src="/lome-archive/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    <!-- Smart Quotes -->
+    <script src="/lome-archive/assets/js/vendor/smartquotes.js"></script>
+</head>
+
+  <body>
+    <header class="site-header">
+
+	<a class="site-title" href="/lome-archive/">
+		G+ LoME Archive
+    </a>
+    
+    <nav class="big-nav">
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                
+                
+                [<a href="/lome-archive/all.html">All</a>]
+            
+        
+            
+                
+                
+                [<a href="/lome-archive/tags.html">Tags</a>]
+            
+        
+            
+                
+                
+                [<a href="/lome-archive/search.html">Search</a>]
+            
+        
+	</nav>
+    <nav class="small-nav">
+        [ <a href="/lome-archive/menue.html">Menue</a> ]
+    </nav>
+</header>
+<hr>
+
+      <div class="title-block">
+    <div class="title">
+        Post <span class="post-id">CAXobB8EUFr</span>
+    </div>
+    <div class="tag-block">
+        <div class="previous">
+            
+                <a href="https://j-teuber.github.io/lome-archive/posts/TX8bj95Pm9r">← previous</a>
+            
+        </div>
+        <div class="tags">
+            
+                <a class="tag" href="/lome-archive/tags.html#lúthien-merilin">Lúthien Merilin</a>,
+            
+                <a class="tag" href="/lome-archive/tags.html#discussion">Discussion</a>,
+            
+                <a class="tag" href="/lome-archive/tags.html#paul-strack">Paul Strack</a>,
+            
+                <a class="tag" href="/lome-archive/tags.html#ekin-gören">Ekin Gören</a>,
+            
+                <a class="tag" href="/lome-archive/tags.html#roman-rausch">Roman Rausch</a>,
+            
+                <a class="tag" href="/lome-archive/tags.html#eryn-galen">Eryn Galen</a>
+            
+        </div>
+        <div class="next">
+            
+                <a href="https://j-teuber.github.io/lome-archive/posts/3zomtd5UCF5">next →</a>
+            
+        </div>
+    </div>
+</div>
+<div class="content-all">
+            <div class="original-post">
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#lúthien-merilin">Lúthien Merilin</a>
+        <span class="time">Aug 05, 2017 (20:09)</span>
+        </h3>
+        <div class="content">Hello +<a class="mention" href="/lome-archive/tags.html#paul-strack">Paul Strack</a>,  (+<a class="mention" href="/lome-archive/tags.html#ekin-gören">Ekin Gören</a>, +<a class="mention" href="/lome-archive/tags.html#eryn-galen">Eryn Galen</a>, +<a class="mention" href="/lome-archive/tags.html#roman-rausch">Roman Rausch</a>)<br><br>there's something that I would like to have your opinion about :)<br><br>In the past weeks the Roman and myself were wondering if it would be possible to make some simplifications to the Eldamo model <strong>without</strong> sacrificing anything of its versatility. <br><br>It had already struck me that many of the compound types that you see in the Word and Ref elements - Derivations, Inflections, Cognates, etcetera - are quite similar: most of them link a Form to either a Word entry or a Ref element.<br>This is why I grouped them together in the <strong>Linked</strong> entity. <br>Of course, the information about the particular type (is it a Derivation, an Inflection or a Cognate, etc.) is preserved. <br><br>But then again, we were wondering if not all <strong>Ref</strong> elements are essentially the same thing - as you describe it on the <i>XML Schema Documentation</i> page <i>"Reference(s) to an attested form (@v) in Tolkien’s writing (...)"</i> ? The only thing that is significantly different, is that they have a link to a <strong>Source</strong>. But there are even other elements that also have links to a Source.<br><br>OK, to make it more concrete: I was working on the dictionary app today and wondering how to represent the <i>deriv</i> element. The entry for <i>Edhel</i> is a great example with lots of _Ref_elements in it (simplifying things for the sake of the discussion somewhat):<br><br><word l="s" v="Edhel" ...><br>   <ref v="Edhil" source="LRI/Edhil.001"><br>      <inflect form="plural"/><br>   <ref ... ><br>   <ref ... ><br>      <inflect ...><br>   <ref ... ><br>      <change ...><br>   <ref ... ><br>      <cognate ...><br>   <ref ... ><br>      <deriv ...><br>   <ref ... ><br>   <ref ... ><br>... many more ....<br>   <child word><br>      <ref ....><br>      <ref ...><br>         <cognate ...><br>      <ref ...><br>      <ref ...><br>         <deriv ...><br>   ... many more ....<br>--- and then the Child Word elements go even two more levels deep.<br><br>I was at one point wondering what the added value is here to have all those <cognate>, <deriv>, <inflect> elements embedded inside <ref> elements. <br><br>Could not the same richness also be captured if you were to replace all those different types of <i>related entities</i> by just two different entities: an <strong>Entry</strong> (Word) and a <strong>Form</strong> ; and let the <i>relationship between them</i> represent the specifics of that relationship (is it a Derivation, a Cognate, a whatever ...)?<br>There would still be some other entities, like Doc, Source, Language - but not a great deal. <br><br>It's essentially a collection of graphs that starts with root element Word (Entry) and where the related Nodes are all Forms - connected to one another by "deriv", "cognate", "child", "before" or what-ever-type of relationship.<br><br>Another reason I got to think about it was that I have been working a lot with graph databases in the past few months at work: we use it there to model hierarchical Cultural Heritage Objects with - for instance, newspapers, magazines, and such. <br>I'm going to think about this in the coming days .. but I am really curious if you ever thought about something like this, and what your thoughts about it are?<br> <br><br></div>
+        </div>
+        
+        <!-- more -->
+        
+        </div>
+        <div class="comments">
+        
+        <div class="comment">
+        <h3 class="author">
+        <a class="author-name" href="/lome-archive/tags.html#lúthien-merilin">Lúthien Merilin</a>
+        <span class="time">Aug 06, 2017 (18:08)</span>
+        </h3>
+        <div class="content">PS - for the record, what I wrote above is not in any way critical of the existing mode. I'm above all still very much impressed with the rigour and sheer size of your effort. <br><br>The sort of alternate representation that I am thinking about does not concern the data itself or how the entities relate to one another. It would just be another way to wrap it up; a way that might make things more transparent. <br><br>This could be done using a regular relational database, but also with a special graph database like Blazegraph (<a class="ext-link" href="https://wiki.blazegraph.com/wiki/index.php/Main_Page">https://wiki.blazegraph.com/wiki/index.php/Main_Page</a>). Anyhow, it's an interesting option.<br><a class="ext-link" href="https://wiki.blazegraph.com/wiki/index.php/Main_Page">wiki.blazegraph.com - Blazegraph</a></div>
+        </div>
+        
+        </div>
+        
+</div>
+
+    
+<script>smartquotes();</script>
+
+  </body>
+</html>
