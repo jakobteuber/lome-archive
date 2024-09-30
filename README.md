@@ -1,6 +1,6 @@
 # G+ LoME Archive
 
-[***Archive Page***](https://j-teuber.github.io/lome-archive)
+[***Archive Page***](https://jakobteuber.github.io/lome-archive)
 
 This is an archive of [Tamas Ferencz](https://middangeard.org.uk/aglardh/)'s
 Google Plus community “Languages of Middle-Earth” (aka LoME),
@@ -18,6 +18,6 @@ permission to republish its contents. However as this has been a scholarly group
 discussing Tolkien's languages and should not have contained much “personal” content
 I think this is acceptable. If you want your posts removed, please message me
 
-- by opening a [GitHub issue](https://github.com/j-teuber/lome-archive/issues/new/choose),
-- via email (see the [Archive Index](https://j-teuber.github.io/lome-archive)), or
-- on the *Vinyë Lambengolmor* Discord server as `@jteuber#8112` (Gilruin).
+- by opening a [GitHub issue](https://github.com/jakobteuber/lome-archive/issues/new/choose),
+- via email (see the [Archive Index](https://jakobteuber.github.io/lome-archive)), or
+- on the *Vinyë Lambengolmor* Discord server as `@gilruin` (Gilruin).
